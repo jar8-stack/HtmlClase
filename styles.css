@@ -38,16 +38,41 @@ body{
 
 #centro{
   width: 100%;
-  background-color: blueviolet;
-  height: calc(100vh - 225px);
+  background-color: white;
+  height: calc(100vh - 305px);
   position: relative;
+  background-image: url('img/Bitmap@2x.jpeg');
+  background-size: auto 100%;
+  background-position: 50% 50%;
 }
 #footer{
   width: 100%;
   height: 150px;
   background-color: #808280;
   position: relative;
+  text-align: center;
 }
+
+#bottomCenter{
+  position: relative;
+  display: inline-block;
+  width: 800px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.bottomSpace{
+  position: relative;
+  display: inline;
+  float: left;
+  width: 30%;
+  text-align: left;
+  color: #fff;
+  font-family: 'gilroylight';
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
 
 #logo{
   width: 30px;
@@ -65,12 +90,41 @@ body{
   right: 22.5px;
 }
 
+
+.centerButton{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-top: 35vh;
+}
+
+.btnBrown{
+  color: white;
+  font-family: 'gilroyextrabold';
+  text-decoration: none;
+  background-color: #773F2F;
+  border-radius: 30px;
+  padding: 10px 20px 10px 20px;
+}
+
 .linkMenu{
   color: #272f57;
   font-family: 'gilroylight';
   text-decoration: none;
   font-size: 18px;
+  border: 0px solid transparent;
+  padding-bottom: 5px;
+  transition: all 0.5s ease;
 }
+
+.linkMenu:hover{
+  border-bottom: 4px solid #773F2F;
+}
+
+
 
 @media screen and (max-width: 720px){
   #centro{
@@ -79,5 +133,23 @@ body{
   #footer{
     height: auto;
   }
+
+  .centerButton{
+    top: auto;
+    -ms-transform: none;
+    transform: none;
+    padding-top: 0;
+    bottom: 40px;
+  }
+
+  .btnBrown{
+    font-size: 16px;
+    padding: 8px 16px 8px 16px;
+  }
+
+  #bottomCenter{
+    
+  }
+
 
 }
