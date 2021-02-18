@@ -167,6 +167,8 @@
   box-sizing: border-box;
 }
 
+
+
 @media screen and (max-width: 720px){
   #centroA{
     height: 70vw;
