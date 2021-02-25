@@ -1,0 +1,34 @@
+version: "3.7"
+services:
+  nginxportal:
+    image: nginx
+    container_name: nginxportal
+    ports:
+      - "83:80"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - ./src:/src
+      - ./logs/:/var/log/nginx/
+    networks:
+      default:
+        aliases:
+          - nginxportal
+    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+    
+  phpportal:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: phpportal
+    volumes:
+      - ./src:/src
+    working_dir: /src
+    ports:
+      - 8003:8000
+    networks:
+      default:
+         aliases:
+          - phpportal
+  
+networks:
+  default:
