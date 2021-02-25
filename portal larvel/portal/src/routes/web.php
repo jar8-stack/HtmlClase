@@ -21,10 +21,9 @@ use Illuminate\Http\Request;
 });*/
 
 Route::get('/', function () {
-    return view('home');
+    return view('index');
 });
 
 
 //Route::get('terminosycondiciones', 'App\Http\Controllers\EstaticosController@terminosycondiciones');
 //Route::post('ajaxPrelogin', 'App\Http\Controllers\LoginController@prelogin')->name('ajaxPrelogin');
-
