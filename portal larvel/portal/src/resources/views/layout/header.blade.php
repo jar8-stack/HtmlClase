@@ -5,8 +5,9 @@
     <title></title>
     <link rel="stylesheet" href="{{env("APP_URL")}}assets/styles.css">
     <link rel="stylesheet" href="{{env("APP_URL")}}assets/stylesheet.css">
+    <link rel="stylesheet" href="{{env("APP_URL")}}assets/makkan.css">
   </head>
-  <body>    
+  <body>
 
     </div>
 

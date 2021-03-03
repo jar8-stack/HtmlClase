@@ -24,6 +24,9 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/makkan', function () {
+    return view('makkan');
+});
 
 //Route::get('terminosycondiciones', 'App\Http\Controllers\EstaticosController@terminosycondiciones');
 //Route::post('ajaxPrelogin', 'App\Http\Controllers\LoginController@prelogin')->name('ajaxPrelogin');

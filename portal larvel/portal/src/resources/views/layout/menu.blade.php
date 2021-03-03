@@ -3,8 +3,8 @@
 
   </div>
   <div id="submenu">
-    <a href="#" class="linkMenu">Inicio</a>
+    <a href="/" class="linkMenu">Inicio</a>
      |
-     <a href="vistas/makkan.html" class="linkMenu">Makkan</a>
+     <a href="/makkan" class="linkMenu">Makkan</a>
   </div>
 </div>
