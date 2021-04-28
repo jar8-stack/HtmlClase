@@ -1,0 +1,16 @@
+version: "3.3"
+
+services:
+  db:
+    image: mariadb
+    ports:
+      - "4502:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_DATABASE=myFirstdb
+      - MYSQL_USER=myFisrtuser
+      - MYSQL_PASSWORD=myFirstpassword
+    volumes:
+      - "./config:/etc/mysql/conf.d"
+      - "./files:/var/lib/mysql"
+      - "./db_logs:/var/log/mysql"
